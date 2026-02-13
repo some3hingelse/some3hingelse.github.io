@@ -151,4 +151,23 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+.experience {
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--subtext);
+}
+
+.stack-label {
+    margin-top: 35px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--subtext);
+}
+
+.tech {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
 
