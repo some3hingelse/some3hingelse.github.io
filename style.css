@@ -28,7 +28,6 @@ body {
 }
 
 /* NAV */
-
 nav {
     position: fixed;
     width: 100%;
@@ -38,8 +37,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 20px 80px;
+    box-sizing: border-box;
     z-index: 1000;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
 }
 
 nav a {

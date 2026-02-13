@@ -1,3 +1,7 @@
+window.onload = function () {
+    window.scrollTo(0, 0);
+};
+
 // Fade-in animation
 const elements = document.querySelectorAll('.fade-in');
 
