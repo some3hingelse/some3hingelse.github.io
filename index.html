@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Alexander Rozhkov | Backend Developer</title>
+
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="#home">Главная</a>
-    <a href="#skills">Навыки</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contacts">Контакты</a>
+    <div class="nav-left">AR</div>
+    <div class="nav-right">
+        <a href="#home">Главная</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+        <button id="theme-toggle">☀</button>
+    </div>
 </nav>
 
-<section id="home" class="hero">
+<section id="home" class="hero fade-in">
     <h1>Александр Рожков</h1>
     <h2>Backend Developer</h2>
-    <p>Golang · Python</p>
+    <p class="tech">Golang · Python</p>
     <p class="subtitle">
         Clean Architecture · Microservices · High-load APIs
     </p>
 </section>
 
-<section id="skills">
+<section id="skills" class="fade-in">
     <h2>Навыки</h2>
 
     <div class="block">
@@ -45,23 +53,23 @@
         <h3>Инфраструктура</h3>
         <p>Docker · CI/CD · ArgoCD · Vault · Kafka · RabbitMQ · Redis Streams</p>
     </div>
-
 </section>
 
-<section id="projects">
+<section id="projects" class="fade-in">
     <h2>Проекты</h2>
 
-    <div class="project-card">
-        <h3>Link Shortener</h3>
-        <p>REST API сервис сокращения ссылок</p>
-        <a href="https://github.com/some3hingelse/link_shortener" target="_blank">
-            Открыть репозиторий →
-        </a>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Link Shortener</h3>
+            <p>REST API сервис сокращения ссылок</p>
+            <a href="https://github.com/some3hingelse/link_shortener" target="_blank">
+                Открыть репозиторий →
+            </a>
+        </div>
     </div>
-
 </section>
 
-<section id="contacts">
+<section id="contacts" class="fade-in">
     <h2>Контакты</h2>
 
     <p>Email: <a href="mailto:rendoslegone@yandex.ru">rendoslegone@yandex.ru</a></p>
@@ -70,6 +78,7 @@
     <p>Telegram: <a href="https://t.me/Oktan_0dek0l0n0vi4" target="_blank">@Oktan_0dek0l0n0vi4</a></p>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
 
