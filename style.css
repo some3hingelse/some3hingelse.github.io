@@ -171,3 +171,50 @@ section {
     font-size: 18px;
 }
 
+.experience-card {
+    margin-top: 40px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    border-color: var(--accent);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.experience-header h3 {
+    margin: 0;
+}
+
+.company {
+    margin-top: 6px;
+    color: var(--subtext);
+}
+
+.period {
+    font-size: 14px;
+    color: var(--subtext);
+    white-space: nowrap;
+}
+
+.experience-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.experience-list li {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
